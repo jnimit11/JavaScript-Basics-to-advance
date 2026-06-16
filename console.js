@@ -19,5 +19,3 @@ for (let i = 0; i < 1000000; i++) {
     // Simulating a time-consuming task
 }
 console.timeEnd("Execution Time");
-
-
