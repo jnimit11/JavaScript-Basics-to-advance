@@ -20,12 +20,4 @@ for (let i = 0; i < 1000000; i++) {
 }
 console.timeEnd("Execution Time");
 
-// Tracing the flow of execution
-function functionA() {
-    console.trace("Trace in functionA");
-}
-function functionB() {
-    functionA();
-}
-functionB();
 
