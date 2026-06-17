@@ -1,0 +1,1 @@
+let cars = new Array("Kia", "Hyundai", "Honda");
