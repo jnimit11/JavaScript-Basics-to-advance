@@ -16,8 +16,23 @@ const mydata = orders.forEach((order, index) => {
 const recieptLines = orders.map((o) => `${o.dish}: $${o.price * o.qty}`);
 console.log(recieptLines);
 
-// Some Interactive Array Methods in JavaScript:
-forEach()
-map()
-reduce()
-filter()
+// the difference between forEach() and map() is that forEach() returns unefined, and map() returns a new array. 
+
+const spicyOrder = orders.filter((o) => o.spicy);
+console.log(spicyOrder);
+
+// the filter() method returns array of object and only print true values when it matches the condition
+
+// reduce() 
+// reduce is used to calcuate total, like shopping CaretPosition, total revenue 
+
+const totalRevenue = orders.reduce((sum , order) => {
+    return sum + order.qty * order.price}, 0 )
+console.log(totalRevenue);
+
+const grouped = orders.reduce((acc, order) => {
+    const category = order.spicy ? "Spicy" : "mild"
+}, {spicy: [], mild:[]})
+
+console.log(grouped);
+
